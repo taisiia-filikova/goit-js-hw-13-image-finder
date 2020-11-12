@@ -4,7 +4,7 @@ export default class NewsApiService {
     this.page = 1;
   }
 
-    async fetchImg() {
+  async fetchImg() {
     const API_KEY = '19086607-f63ea5bac9dbca697b9469f63';
     const BASE_URL = 'https://pixabay.com/api';
 
