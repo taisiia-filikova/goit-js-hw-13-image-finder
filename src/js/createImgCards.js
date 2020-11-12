@@ -37,9 +37,9 @@ function searchImgs(e) {
   }
 
   loadBtn.show();
-  newsApiService.resetPage();
+  newsApiService.reset();
   clearCards();
-  fetchCards();
+  fetchImg();
 }
 
 function fetchCards() {
