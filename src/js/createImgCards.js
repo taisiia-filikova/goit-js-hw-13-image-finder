@@ -48,12 +48,13 @@ async function fetchImg() {
   addMarkup(imgs);
   loadBtn.enable();
   if (imgs.length === 0) {
-    loadBtn.hide();
     error({
       text: 'Sorry. Nothing found :(',
       delay: 1500,
       closerHover: true,
     });
+  } else if (imgs.length < 12) {
+    loadBtn.hide();
   }
 }
 
