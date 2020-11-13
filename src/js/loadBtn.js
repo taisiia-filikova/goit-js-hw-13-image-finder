@@ -9,21 +9,19 @@ export default class LoadBtn {
     const refs = {};
     refs.btn = document.querySelector(selector);
     refs.tag = refs.btn.querySelector('.tag');
-    // refs.spinner = refs.btn.querySelector('.spinner');
-
+    
     return refs;
   }
 
   enable() {
     this.refs.btn.disabled = false;
     this.refs.tag.textContent = 'Load more';
-    // this.refs.spinner.classList.add('is-hidden');
   }
 
   disable() {
     this.refs.btn.disabled = true;
     this.refs.tag.textContent = 'Wait...';
-    // this.refs.spinner.classList.remove('is-hidden');
+    
   }
 
   show() {
