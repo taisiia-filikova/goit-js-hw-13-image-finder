@@ -1,4 +1,4 @@
 import './styles.css';
-import './js/apiService.js';
+// import './js/apiService.js';
 import './js/createImgCards.js';
-import './js/loadBtn.js';
+// import './js/loadBtn.js';

@@ -42,20 +42,19 @@ function searchImgs(e) {
   fetchImg();
 }
 
-function fetchCards() {
+async function fetchImg() {
   loadBtn.disable();
-  return newsApiService.fetchCards().then(imgs => {
-    addMarkup(imgs);
-    loadBtn.enable();
-    if (imgs.length === 0) {
-      loadBtn.hide();
-      error({
-        text: 'Sorry. Nothing found :(',
-        delay: 1500,
-        closerHover: true,
-      });
-    }
-  });
+  const imgs = await newsApiService.fetchImg();
+  addMarkup(imgs);
+  loadBtn.enable();
+  if (imgs.length === 0) {
+    loadBtn.hide();
+    error({
+      text: 'Sorry. Nothing found :(',
+      delay: 1500,
+      closerHover: true,
+    });
+  }
 }
 
 function addMarkup(imgs) {
