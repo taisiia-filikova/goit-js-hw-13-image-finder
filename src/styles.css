@@ -1,9 +1,9 @@
 :root {
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-duration: 250ms;
   --basic-color: #544037;
   --shadow: #dfcdab 1px 1px 10px, #dfcdab -1px -1px 10px, #dfcdab -1px 1px 10px,
     #dfcdab 1px -1px 10px;
+  --shadow-dark: #544037 1px 1px 10px, #544037 -1px -1px 10px,
+    #544037 -1px 1px 10px, #544037 1px -1px 10px;
 }
 
 html {
@@ -85,6 +85,7 @@ input::placeholder {
   font-family: 'Comfortaa', cursive;
   font-size: 18px;
 }
+
 .load-more {
   margin-top: 15px;
   margin-bottom: 50px;
@@ -115,7 +116,7 @@ input::placeholder {
   background-color: wheat;
   border-radius: 6px;
 
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-dark);
 
   cursor: pointer;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
