@@ -75,7 +75,7 @@ function openModal(e) {
 }
 
 function loadMore() {
-  fetchCards()
+  fetchImg()
     .then(
       setTimeout(() => {
         window.scrollBy({
